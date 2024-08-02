@@ -1,6 +1,5 @@
 {% set version = '0.7.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-iheatmapr
@@ -13,8 +12,7 @@ source:
   sha256: 1b72ac3cd645ef0ddc31d2c92a659e35d42c94f405f036413775f05dc1dd8db0
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
